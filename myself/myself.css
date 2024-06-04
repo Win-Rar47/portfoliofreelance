@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+}
+
+.background {
+  min-width: 720px;
+  width: 100vw;
+  height: 800px;
+  background-color: rgb(60, 60, 110);
+}
+
+.space {
+  width: 30px;
+}
+
+.nav-item {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.nav-item a {
+  display: flex;
+  color: white;
+}
+.nav-item button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(180, 60, 60);
+  color: white;
+}
+.nav-item button:hover {
+  background-color: rgba(155, 13, 13, 0.562);
+  transition: 0.2s;
+}
+
+.nav-item a {
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 500px;
+  }
+  .nav-item a {
+    font-size: 10px;
+  }
+  .doble button {
+    font-size: 10px;
+  }
+}
+.container {
+  min-width: 720px;
+}
+
+.welcome {
+  margin-top: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.welcome .contacts {
+  margin-top: 160px;
+  margin-left: 3%;
+  width: 80px;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.welcome .contacts button {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(70, 70, 110);
+}
+.welcome .icon {
+  width: 40px;
+  height: 40px;
+}
+.welcome .icon:hover {
+  margin-bottom: 2px;
+}
+.welcome .info {
+  width: 45%;
+}
+.welcome .circle-1 {
+  position: absolute;
+  z-index: 1;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgb(39, 40, 97);
+  margin-top: 80px;
+  margin-left: 6%;
+}
+.welcome h3, .welcome h1, .welcome p, .welcome .doble {
+  text-wrap: nowrap;
+  position: relative;
+  z-index: 2;
+  margin-left: 20%;
+  color: white;
+}
+.welcome h3 {
+  margin-top: 160px;
+}
+.welcome a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.welcome .doble {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.welcome .doble .button-1 {
+  border: none;
+  background-color: rgb(180, 60, 60);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.welcome .doble .button-2 {
+  border: inset 2px;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.welcome .button-1:hover {
+  background-color: rgba(155, 13, 13, 0.562);
+  transition: 0.2s;
+}
+.welcome .button-2:hover {
+  background-color: rgb(238, 187, 215);
+}
+.welcome .big-circle {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: rgb(40, 40, 100);
+}
+.welcome .circle-2 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgb(190, 190, 190);
+  margin-top: 80px;
+  margin-left: 6%;
+  animation: flip 3s linear;
+}
+.welcome .skill-1, .welcome .skill-2 {
+  border-radius: 5px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(70, 70, 110);
+}
+.welcome .skill-2 {
+  margin-left: 15vw;
+  margin-top: 20px;
+}
+.welcome .skill-1 {
+  margin-top: 60px;
+}
+.welcome .box {
+  z-index: 0;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.welcome .row {
+  margin: 0 0 0 0;
+}
+
+@keyframes flip {
+  0% {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    scale: 100%;
+  }
+  20% {
+    z-index: -1;
+    top: 0;
+    left: 495px;
+    right: 0;
+    bottom: 40px;
+    scale: 120%;
+  }
+  80% {
+    z-index: -1;
+    left: -500px;
+    top: 0;
+    bottom: 10px;
+    scale: 30%;
+  }
+  100% {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    scale: 100%;
+  }
+}
+.portfolio {
+  width: 80px;
+  height: 20px;
+}
+
+.title {
+  width: 100vw;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(40, 40, 100);
+  color: white;
+}
+.title .portfolio {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 30px;
+  background-color: rgb(70, 70, 110);
+  border-radius: 4px;
+}
+.title .portfolio h3 {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.title h1 {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.title button {
+  margin-top: 20px;
+  width: 80px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.title .row {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+.title .buttons {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.background1 {
+  min-width: 720px;
+  width: 100vw;
+  height: 800px;
+  background-color: rgb(40, 40, 100);
+}
+
+.background1 .container {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(40, 40, 100);
+}
+.background1 .container .shall {
+  width: 32%;
+  height: 700px;
+  background-color: rgb(40, 40, 100);
+}
+.background1 .container .box-small {
+  width: 100%;
+  height: 32%;
+  background-color: rgb(180, 60, 60);
+  border-radius: 4px;
+}
+.background1 .container .box-small-1 {
+  margin-top: 6%;
+  width: 100%;
+  height: 32%;
+  background-color: rgb(181, 134, 202);
+  border-radius: 4px;
+}
+.background1 .container .box-big {
+  width: 100%;
+  height: 64%;
+  background-color: rgb(170, 207, 195);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 6%;
+  border-radius: 4px;
+  color: white;
+}
+.background1 .container .box-big-1 {
+  margin-top: 6%;
+  width: 100%;
+  height: 64%;
+  background-color: rgb(216, 218, 144);
+  border-radius: 4px;
+}/*# sourceMappingURL=myself.css.map */

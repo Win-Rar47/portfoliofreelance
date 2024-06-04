@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+header {
+    padding: 4px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & a {
+        margin: 10px;
+        color: rgb(65, 65, 65);
+        text-decoration: none;
+    }
+    & .btn-1 {
+        margin: 10px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+    }
+    & .btn-2 {
+        margin: 10px;
+        width: 110px;
+        height: 35px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(22, 110, 224);
+        color: white;
+    }
+    & .btn-2:hover {
+        background-color: rgb(18, 19, 102);
+    }
+    & button img {
+        width: 25px;
+        height: 25px;
+    }
+}
+main {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & .box {
+    width: 500px;
+    & h1 {
+        margin-bottom: 30px;
+        font-size: 80px;
+        & .blue {
+            color: rgb(22, 110, 224);
+        }
+        & .red {
+            color: rgb(194, 53, 53);
+        }
+        & .green {
+            color: rgb(21, 189, 21);
+        }
+        & .yellow {
+            color: rgb(238, 199, 28);
+        }
+    }
+    & button {
+        color: rgb(129, 129, 129);
+        padding: 5px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(247, 247, 247);
+    }
+    & button:hover {
+        background-color: rgb(22, 110, 224);
+        color: white;
+        transition: 0.2s;
+    }
+    & .search-box {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 95%;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid rgba(122, 122, 122, 0.603);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    & .search {
+        width: 100%;
+        border: none;
+        outline: none;
+        & input {
+            width: 100%;
+            border: none;
+        }
+    }
+    & button {
+        width: 35px;
+        height: 40px;
+        background-color: transparent;
+    }
+
+    & img {
+        width: 25px;
+        height: 25px;
+    }
+    }
+    }
+}
+footer{
+   
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    
+    & .ua {
+        width: 100%;
+        height: 20px;
+        h6 {
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: rgb(160,160,160);
+    }
+    } 
+    & .box-row {
+        display: flex;
+        width: 100%;
+        & .row-1 {
+            display: flex;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 50%;
+            & a {
+                font-size: 14px;
+                margin-left: 1%;
+                margin-right: 2%;
+                color: rgb(160, 160, 160);
+                text-decoration: none;
+                text-wrap: nowrap;
+            }
+        }
+        & .row-2 {
+            padding-top: 10px;
+            padding-right: 10px;
+            display: flex;
+            & a {
+                font-size: 14px;
+                margin-left: 2%;
+                margin-right: 1%;
+                color: rgb(160, 160, 160);
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+@media (max-width:820px){
+    header {
+        justify-content: center;
+    }
+    .box-row {
+        flex-direction: column;
+        & .row-2 {
+            justify-content: flex-start;
+            width: 100%;
+            
+        }
+        & a {
+            scale: 90%;
+        }
+    }
+    footer {
+        margin-top: 5vh;
+        height: 15vh;
+    }
+    
+}
+@media (min-width:820px){
+    .box-row {
+        flex-direction: row;
+        & .row-2 {
+            width: 50%;
+            justify-content: flex-end;
+        }
+    }
+    footer {
+        margin-top: 8vh;
+        height: 12vh;
+    }
+}
