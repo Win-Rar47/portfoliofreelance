@@ -180,19 +180,20 @@ header ul {
     width: 100%;
     background-color: #ffffff;
     min-height: 10vh;
-    max-height: 15vh;
+    max-height: 18vh;
     width: 100%;
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
-    overflow-y: hidden;
     & li a {
         display:flex;
         position: relative;
         text-decoration: none;
         color: #141414;
         font-size: 20px;
+        width: auto;
+        height:30px
     }
     & li a:hover {
         color: #918f8f;
