@@ -5,6 +5,9 @@
     scrollbar-width: none;
     overflow: hidden;
 }
+body {
+    scrollbar-height: none;
+}
 .stiky1 {
     display: flex;
     position: fixed;
