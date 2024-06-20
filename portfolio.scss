@@ -187,6 +187,7 @@ header ul {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    overflow: hidden;
     & li a {
         position: relative;
         text-decoration: none;
@@ -216,6 +217,7 @@ header ul {
     background: linear-gradient(0deg,rgba(255, 0, 0, 0.2),rgb(40, 120, 190));
     width: 100%;
     min-height: 90vh;
+    overflow: hidden;
     & div div {
  
         min-height: auto;
