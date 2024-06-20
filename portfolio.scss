@@ -188,6 +188,7 @@ header ul {
     flex-wrap: wrap;
     overflow-y: hidden;
     & li a {
+        display:flex;
         position: relative;
         text-decoration: none;
         color: #141414;
