@@ -59,12 +59,8 @@
     .stiky1 , .stiky2 {
         display: none;
     }
-    header ul {
-        padding: 10px;
-    }
     header ul li a {
         margin: 20px;
-        overflow: hidden;
     }
     .container1 {
         & .col-md-1 {
@@ -181,7 +177,6 @@ header ul {
     background-color: #ffffff;
     min-height: 10vh;
     max-height: 18vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     list-style: none;
