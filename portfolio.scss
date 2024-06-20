@@ -4,8 +4,6 @@
     box-sizing: border-box;
     scrollbar-width: none;
     overflow-x: hidden;
-    overflow-y: hidden; 
-    overflow: none; 
 }
 .stiky1 {
     display: flex;
@@ -188,7 +186,7 @@ header ul {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-y: hidden;
     & li a {
         position: relative;
         text-decoration: none;
@@ -259,6 +257,7 @@ header ul {
             font-weight: 400;
         }
         & div h1 , h2, h3 , p {
+            overflow-y: hidden;
             margin: 5px;
             color: rgb(245, 245, 245);
             font-family: 'Source Sans 3';
@@ -350,6 +349,7 @@ transform: rotate(360deg);
     width: 100%;
     background: linear-gradient(0deg,rgb(255, 255, 255),rgb(201, 201, 201));
     & h1{
+        overflow-y: hidden;
         text-align: center;
         margin-bottom: 40px;
         padding-top: 30px;
